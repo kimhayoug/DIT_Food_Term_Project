@@ -12,6 +12,12 @@
 		0C0DC91E20E07AD900FBF5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DC91C20E07AD900FBF5A2 /* Main.storyboard */; };
 		0C0DC92020E07AD900FBF5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DC91F20E07AD900FBF5A2 /* Assets.xcassets */; };
 		0C0DC92320E07AD900FBF5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DC92120E07AD900FBF5A2 /* LaunchScreen.storyboard */; };
+		0C56162820E327BA005BF7CA /* TotalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56162720E327BA005BF7CA /* TotalMapViewController.swift */; };
+		0C56162A20E32816005BF7CA /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56162920E32816005BF7CA /* MyTableViewController.swift */; };
+		0C56162C20E3290C005BF7CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56162B20E3290C005BF7CA /* DetailViewController.swift */; };
+		0C56162F20E329AE005BF7CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C56162E20E329AE005BF7CA /* MapKit.framework */; };
+		0C56163120E32A2D005BF7CA /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56163020E32A2D005BF7CA /* FoodStoreTableViewCell.swift */; };
+		0C56163320E32B98005BF7CA /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56163220E32B98005BF7CA /* MapTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		0C0DC91F20E07AD900FBF5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0DC92220E07AD900FBF5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C0DC92420E07AD900FBF5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C56162720E327BA005BF7CA /* TotalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMapViewController.swift; sourceTree = "<group>"; };
+		0C56162920E32816005BF7CA /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		0C56162B20E3290C005BF7CA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0C56162E20E329AE005BF7CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0C56163020E32A2D005BF7CA /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
+		0C56163220E32B98005BF7CA /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C56162F20E329AE005BF7CA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				0C0DC91720E07AD900FBF5A2 /* DITFood */,
 				0C0DC91620E07AD900FBF5A2 /* Products */,
+				0C56162D20E329AE005BF7CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +74,21 @@
 				0C0DC91F20E07AD900FBF5A2 /* Assets.xcassets */,
 				0C0DC92120E07AD900FBF5A2 /* LaunchScreen.storyboard */,
 				0C0DC92420E07AD900FBF5A2 /* Info.plist */,
+				0C56162720E327BA005BF7CA /* TotalMapViewController.swift */,
+				0C56162920E32816005BF7CA /* MyTableViewController.swift */,
+				0C56162B20E3290C005BF7CA /* DetailViewController.swift */,
+				0C56163020E32A2D005BF7CA /* FoodStoreTableViewCell.swift */,
+				0C56163220E32B98005BF7CA /* MapTableViewCell.swift */,
 			);
 			path = DITFood;
+			sourceTree = "<group>";
+		};
+		0C56162D20E329AE005BF7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C56162E20E329AE005BF7CA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0DC91B20E07AD900FBF5A2 /* ViewController.swift in Sources */,
+				0C56163120E32A2D005BF7CA /* FoodStoreTableViewCell.swift in Sources */,
 				0C0DC91920E07AD900FBF5A2 /* AppDelegate.swift in Sources */,
+				0C56163320E32B98005BF7CA /* MapTableViewCell.swift in Sources */,
+				0C56162C20E3290C005BF7CA /* DetailViewController.swift in Sources */,
+				0C56162820E327BA005BF7CA /* TotalMapViewController.swift in Sources */,
+				0C56162A20E32816005BF7CA /* MyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

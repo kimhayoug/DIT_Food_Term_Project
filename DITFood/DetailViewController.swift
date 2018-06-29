@@ -11,7 +11,7 @@ import UIKit
 class DetailViewController: UIViewController, UITableViewDelegate,
 UITableViewDataSource{
     
-    @IBOutlet weak var detailTableView: UITableView!
+    @IBOutlet weak var detaTableView: UITableView!
     @IBOutlet weak var cellImageView: UIImageView!
     
     @IBAction func btcell(_ sender: Any) {
@@ -27,8 +27,8 @@ UITableViewDataSource{
     var money: String = ""
         func viewDidLoad() {
         super.viewDidLoad()
-        detailTableView.delegate = self
-        detailTableView.dataSource = self
+        detaTableView.delegate = self
+        detaTableView.dataSource = self
         
         cellImageView.image = UIImage(named: cellImage)
         self.title = name

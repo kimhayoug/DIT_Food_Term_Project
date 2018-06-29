@@ -13,7 +13,7 @@ class MapTableViewCell: UITableViewCell {
     
     func configure(location: String) {
         
-        let Clgeocoder = CLGeocoder()
+        let geocoder = CLGeocoder()
         geoCoder.geocodeAddressString(location, completionHandler: {
             
             (Placemarks: [CLPlacemark]?, error: Error?) -> Void in

@@ -106,12 +106,6 @@ class MyTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath =  tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! DetailViewController
-                //                destinationController.name = foodStoreNames[indexPath.row]
-                //                destinationController.cellImage = foodStoreThumbnail[indexPath.row]
-                //                destinationController.local1 = foodStoreAddress[indexPath.row]
-                //                destinationController.tel1 = foodStoreTel[indexPath.row]
-                //                destinationController.menu = foodMenus[indexPath.row]
-                //                destinationController.type = foodStoreType[indexPath.row]
                 
                 destinationController.name = foodStores[indexPath.row].name
                 destinationController.cellImage = foodStores[indexPath.row].image
@@ -124,11 +118,7 @@ class MyTableViewController: UITableViewController {
         } else if segue.identifier == "totalMapView" {
             let destinationController = segue.destination as! TotalMapViewController
             destinationController.totalFoodStores = foodStores
-            //destinationController.cellImage = foodStoreThumbnail[indexPath.row]
-            //destinationController.locations = foodStores[IndexPath.row
-            //destinationController.tel1 = foodStoreTel[indexPath.row]
-            //destinationController.menu = foodMenus[indexPath.row]
-            //destinationController.type = foodStoreType
+            
         }
     }
     }

@@ -131,11 +131,18 @@
                                 <rect key="frame" x="131" y="602" width="118" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Image"/>
+                                <connections>
+                                    <action selector="btcell:" destination="M9E-6p-i2f" eventType="touchUpInside" id="Qwa-xt-45S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xXi-1Q-5eW"/>
                     </view>
+                    <connections>
+                        <outlet property="cellImageView" destination="U5R-fw-SFE" id="EzV-C5-bhb"/>
+                        <outlet property="detailTableView" destination="RfD-ub-1lf" id="Re2-eO-CRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nh1-jg-fIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,6 +164,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q8d-tM-rTw"/>
                     </view>
+                    <connections>
+                        <outlet property="totalMapView" destination="tzy-7u-kDA" id="RH6-k7-eAp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDs-yg-GoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

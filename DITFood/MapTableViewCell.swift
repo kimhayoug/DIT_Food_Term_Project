@@ -16,7 +16,7 @@ class MapTableViewCell: UITableViewCell {
         let geoCoder = CLGeocoder()
         geoCoder.geocodeAddressString(location, completionHandler: {
             
-            (placemarks: [CLPacemark]?, error: Error?) -> Void in
+            (placemarks: [CLPlacemark]?, error: Error?) -> Void in
             
             if let error = error {
                 print(error)

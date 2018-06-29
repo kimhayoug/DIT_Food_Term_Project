@@ -14,6 +14,19 @@ UITableViewDataSource{
     @IBOutlet weak var detailTableView: UITableView!
     @IBOutlet weak var cellImageView: UIImageView!
     
+    @IBAction func btcell(_ sender: Any) {
+        print(IndexPath.row)
+        print(FoodStore[IndexPath.row])
+        print(FoodStore[IndexPath.row])
+        
+        let optionMenu = UIAlertController(title:"전화걸기",message:
+            FoodStoreType[IndexPath.row], preferredStyle: .actionSheet)
+        
+        let cellAction = UIAlertAction(title: "전화를 거시겠습니까?", style: .default) {(action: UIAlertAction)-> Void in
+            
+            print("전화를 걸고 있습니다!!!")
+    }
+    
     var cellImage: String = ""
     var name: String = ""
     var local1: String = ""
@@ -21,7 +34,7 @@ UITableViewDataSource{
     var menu: String = ""
     var type: String = ""
     var money: String = ""
-    override func viewDidLoad() {
+        func viewDidLoad() {
         super.viewDidLoad()
         detailTableView.delegate = self
         detailTableView.dataSource = self
@@ -54,7 +67,7 @@ UITableViewDataSource{
         }
     }
 
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

@@ -9,14 +9,14 @@
 import UIKit
 import MapKit
 class MapTableViewCell: UITableViewCell {
-    @IBOutlet weak var detailMapView: MKMapView!
+    @IBOutlet weak var detaMapView: MKMapView!
     
     func configure(location: String) {
         
-        let geoCoder = CLGeocoder()
+        let Clgeocoder = CLGeocoder()
         geoCoder.geocodeAddressString(location, completionHandler: {
             
-            (placemarks: [CLPlacemark]?, error: Error?) -> Void in
+            (Placemarks: [CLPlacemark]?, error: Error?) -> Void in
             
             if let error = error {
                 print(error)

@@ -15,16 +15,7 @@ UITableViewDataSource{
     @IBOutlet weak var cellImageView: UIImageView!
     
     @IBAction func btcell(_ sender: Any) {
-        print(IndexPath.row)
-        print(FoodStore[IndexPath.row])
-        print(FoodStore[IndexPath.row])
         
-        let optionMenu = UIAlertController(title:"전화걸기",message:
-            FoodStoreType[IndexPath.row], preferredStyle: .actionSheet)
-        
-        let cellAction = UIAlertAction(title: "전화를 거시겠습니까?", style: .default) {(action: UIAlertAction)-> Void in
-            
-            print("전화를 걸고 있습니다!!!")
     }
     
     var cellImage: String = ""
@@ -67,7 +58,7 @@ UITableViewDataSource{
         }
     }
 
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

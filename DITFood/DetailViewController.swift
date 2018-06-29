@@ -15,6 +15,7 @@ UITableViewDataSource{
     @IBOutlet weak var cellImageView: UIImageView!
     
     @IBAction func btcell(_ sender: Any) {
+        let toast = Toast(text:FoodStorename+"전화를 거시겠습니다")
         
     }
     
